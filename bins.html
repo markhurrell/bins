@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style type="text/css">
+         * {
+            padding: 0;
+            margin: 0;
+            font-family: Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 800;
+            line-height: 1.333;
+            -webkit-font-smoothing: antialiased;
+         }
+         h1, h2 {
+            font-size: 2em;
+            text-transform: uppercase;
+         }
+         body {
+            position: relative;
+         }
+         #header {
+            overflow: hidden;
+            padding: 10vh 5%;
+            height: 5vh;
+         }
+         h1 {
+            float: left;
+            box-sizing: border-box;
+            padding: 0 5px;
+         }
+         #header a {
+            position: relative;
+            top: 15px;
+            float: right;
+            text-decoration: none;
+            color: #ff179a;
+         }
+         #wrapper {
+            padding: 0 5% 5%;
+         }
+         ul {
+            list-style: none;
+            overflow: hidden;
+         }
+         li {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 0 5px 50px;
+         }
+         li.focus {
+            width: 100%;
+         }
+         @media (min-width: 600px) {
+            li {
+               float: left;
+               width: 33.3%;
+            }
+         }
+         @media (min-width: 800px) {
+            li {
+               float: left;
+               width: 25%;
+            }
+            li.focus {
+               width: 50%;
+            }
+         }
+         @media (min-width: 1100px) {
+            li {
+               float: left;
+               width: 20%;
+            }
+            li.focus {
+               width: 40%;
+            }
+         }
+         li img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            filter: grayscale(100%) contrast(75%) brightness(110%);
+         }
+         li.focus img {
+            filter: none;
+         }
+         li p strong {
+            display: block;
+         }
+         #about {
+            position: absolute;
+            display: none;
+            background: #eee;
+            background: rgba(160,160,160,0.95);
+            padding: 25vh 50px 50px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+         }
+         #about.open {
+            display: block;
+         }
+         #about h2 {
+            position: relative;
+            top: -4px;
+         }
+         #about h2,
+         #about p {
+            max-width: 20em;
+            margin: 0 auto;
+         }
+         #about p+p {
+            padding-top: 10px;
+         }
+         #about a {
+            color: white;
+            text-decoration: none;
+         }
+         @media (min-width: 1200px) {
+            #header a {
+               display: none;
+            }
+            #wrapper {
+               padding-right: 350px;
+            }
+            #about {
+               position: absolute;
+               display: block;
+               background: transparent;
+               padding: 0;
+               top: 25vh;
+               margin-top: -5px;
+               left: auto;
+               right: 5%;
+               width: 230px;
+               bottom: auto;
+            }
+            #about-close {
+               display: none;
+            }
+         }
+      </style>
+      <script src="jquery-3.2.1.min.js"></script>
+   </head>
+   <body>
+      <div id="header">
+         <h1>Bins</h1>
+         <a href="#">What is this?</a>
+      </div>
+      <div id="wrapper">
+         <ul>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+            <li>
+               <img src="bin.jpeg">
+               <p><strong>Council</strong> location</p>
+            </li>
+         </ul>
+      </div>
+      <div id="about">
+         <h2>Bins</h2>
+         <p>On Thursday, streetwear brand Supreme dropped a ton of new gear. Naturally, there were huge lines outside of their stores, including the one in Los Angeles. That day, a 17-year-old named Brandon waited in line for nine hours and emerged at around 2 p.m. with about $425 worth of coveted Supreme stuff. He says that he was then robbed at gunpoint as he walked back to his car on Rosewood. Brandon posted about the experience on Instagram.</p>
+         <p>The teen - who is withholding his last name for fear of retaliation - was at his first-ever lineup for Supreme gear. He talked to Complex, saying that he "wanted people to know" what happened.<br><br><a id="about-close" href="#">Close</a></p>
+         <p></p>
+      </div>
+      <script>
+         $("li").click(function() {
+           $(this).toggleClass("focus");
+         });      
+         $("#header a").click(function() {
+           $("#about").toggleClass("open");
+           return false;
+         });      
+         $("#about-close").click(function() {
+           $("#about").removeClass("open");
+           return false;
+         });      
+      </script>
+   </body>
+</html>
